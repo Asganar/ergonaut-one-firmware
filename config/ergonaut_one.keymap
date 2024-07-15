@@ -22,6 +22,15 @@
         };
     };
 
+    macros {
+        Lang_Shift: Lang_Shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp LC(LEFT_SHIFT)>;
+            label = "LANG_SHIFT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,10 +45,10 @@
 
         raise_layer {
             bindings = <
-&mt LGUI CAPS  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT      &kp LA(F4)  &kp C_VOL_UP  &kp PRINTSCREEN  &kp HOME     &kp UP_ARROW    &kp END    &kp KP_NUMLOCK   &kp BACKSPACE
-&trans         &mkp RCLK   &kp RC(X)         &kp RC(C)       &kp RC(V)   &kp C_VOL_DN  &kp INSERT       &kp LEFT     &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK   &kp DEL
-&trans         &none       &none             &kp LA(LSHIFT)  &none       &kp C_MUTE    &kp K_CALC       &kp PAGE_UP  &kp RC(END)     &kp PG_DN  &kp PAUSE_BREAK  &kp K_APP
-                                             &trans          &trans      &trans        &trans           &trans       &trans
+&mt LGUI CAPS  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT   &kp LA(F4)  &kp C_VOL_UP  &kp PRINTSCREEN  &kp HOME     &kp UP_ARROW    &kp END    &kp KP_NUMLOCK   &kp BACKSPACE
+&trans         &mkp RCLK   &kp RC(X)         &kp RC(C)    &kp RC(V)   &kp C_VOL_DN  &kp INSERT       &kp LEFT     &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK   &kp DEL
+&trans         &none       &none             &Lang_Shift  &none       &kp C_MUTE    &kp K_CALC       &kp PAGE_UP  &kp RC(END)     &kp PG_DN  &kp PAUSE_BREAK  &kp K_APP
+                                             &trans       &trans      &trans        &trans           &trans       &trans
             >;
         };
 
