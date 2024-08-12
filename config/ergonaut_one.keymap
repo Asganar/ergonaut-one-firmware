@@ -28,6 +28,8 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp LC(LEFT_SHIFT)>;
             label = "LANG_SHIFT";
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
     };
 
