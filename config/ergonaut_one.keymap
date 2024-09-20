@@ -71,10 +71,10 @@
 
         lower_layer {
             bindings = <
-&mt LGUI CAPSLOCK  &kp LS(N1)         &kp LS(N2)     &kp LS(N3)  &kp LS(N4)  &kp LS(N5)     &my_rs N6         &kp RS(N7)         &kp RS(N8)     &kp RS(N9)  &kp RS(N0)  &kp BACKSPACE
-&kp LEFT_ALT       &kp N1             &kp N2         &kp N3      &kp N4      &kp N5         &kp N6            &kp N7             &kp N8         &kp N9      &kp N0      &kp RIGHT_ALT
-&kp LEFT_CONTROL   &kp LS(BACKSLASH)  &kp LS(MINUS)  &kp EQUAL   &kp MINUS   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp DOT     &kp SLASH   &kp RIGHT_CONTROL
-                                                     &trans      &trans      &trans         &trans            &trans             &trans
+&mt LGUI CAPSLOCK  &my_rs N1         &my_rs N2     &my_rs N3  &my_rs N4  &my_rs N5     &my_rs N6         &my_rs N7          &my_rs N8      &my_rs N9  &my_rs N0  &kp BACKSPACE
+&kp LEFT_ALT       &kp N1            &kp N2        &kp N3     &kp N4     &kp N5        &kp N6            &kp N7             &kp N8         &kp N9     &kp N0     &kp RIGHT_ALT
+&kp LEFT_CONTROL   &my_rs BACKSLASH  &my_rs MINUS  &kp EQUAL  &kp MINUS  &my_rs EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp DOT    &kp SLASH  &kp RIGHT_CONTROL
+                                                   &trans     &trans     &trans        &trans            &trans             &trans
             >;
         };
 
