@@ -2,6 +2,21 @@
 
 This is a repository for a ZMK Firmware for Ergonaut One keyboard.
 
+## ZMK Studio
+
+Сборка включает раскладку Asganar и макросы `Lang_Shift`, `my_rs` и `my_rs_c`
+из [конфигурации клавиш](config/ergonaut_one.keymap).
+
+В GitHub Actions запустите `.github/workflows/build.yml` и скачайте архив
+`firmware` из успешной сборки. Для левой половины используйте
+`ergonaut_one_left_studio.uf2`, для правой —
+`ergonaut_one_right-seeeduino_xiao_ble-zmk.uf2`.
+
+Подключите левую половину по USB и откройте [ZMK Studio](https://zmk.studio/)
+в Chrome или Edge. Удерживайте среднюю и внутреннюю клавиши левого большого
+пальца (`Backspace` и `Space`), затем нажмите `X` для разблокировки Studio.
+Содержимое макросов можно изменить в `.keymap` и пересобрать прошивку.
+
 ## Default keymap
 
 Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/13d0f7ae7a8b5835efcd23d61f50336a)
@@ -45,7 +60,7 @@ You have two options on how to configure your desired keymap:
 ### How to flash the keyboard?
 
 1. Obtain `firmware.zip`
-2. Unzip `firmware.zip` - you should have `ergonaut_one_left-seeeduino_xiao_ble-zmk.uf2` and `ergonaut_one_right-seeeduino_xiao_ble-zmk.uf2` files
+2. Unzip `firmware.zip` to get `ergonaut_one_left_studio.uf2` and `ergonaut_one_right-seeeduino_xiao_ble-zmk.uf2`
 3. Turn off the power for selected halve (move slider to position `OFF`)
 4. Connect selected halve to the PC via USB-C cable
 5. Press `RESET` button **twice** to enter DFU mode - you should see new USB device in your file manager
